@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--CSS Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+ 
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/gg.jpg" />
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Gustavo Andres Godoy | Software Developer</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>Gustavo Godoy</h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">Sobre mi</a></li>
+      <li><a href="#education" class="nav-link">Formacion</a></li>
+      <li><a href="#skills" class="nav-link">Habilidades</a></li>
+      <li><a href="#contact" class="nav-link">Contacto</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+  </nav>
+
+
+  <!-- about Section -->
+  <section class="about" id="about">
+    <img src="images/foto_cv.png" alt="Gustavo Godoy" loading="lazy" class="about-img" />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title">Perfil</h2>
+      <p class="bio-text">
+        Estudiante de Ingeniería en Telecomunicaciones, me destaco por mi trabajo en equipo, aprendizaje rápido y
+        adaptabilidad. Comprometido, autónomo, y organizado. Me introduje en el mundo de la programación y quiero
+        especializarme como desarrollador backend. Mi objetivo laboral es adquirir experiencia y crecer.
+      </p>
+    </div>
+  </section>
+
+  <!-- education -->
+  <section class="education" id="education">
+    <h2 class="education-title">Formacion</h2>
+    <div>
+      <p> Universidad Nacional de Rio Cuarto </p>
+      <li>Ingeniería en Telecomunicaciones. Cursando el Cuarto año de la carrera.</li> <br>
+      <p> Cursos </p>
+      <li>2022-Programacion Web Full Stack con Java en EGG-educación; en curso, finalizando en febrero 2023.</li>
+      <li>2022-Programa ONE. De Alura Latam + Oracle; en curso.</li>
+      <li>2022-Introduccion a la programación en EGG-educación; finalizado.</li>
+      <li>2022-Argentina Programa. #SeProgramar; finalizado.</li>
+    </div>
+
+  </section>
+
+  <!-- Skills section -->
+  <section class="skills" id="skills">
+    <h2 class="skill-header">Mis Habilidades</h2>
+
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img src="icons/icons8-java.svg" alt="icono java" loading="lazy"
+          class="icon icon-card" />
+        <img src="icons/icons8-spring-boot.svg" alt="icono spring boot" loading="lazy"
+          class="icon icon-card" />
+        <img src="icons/icons8-react-native.svg" alt="" loading="lazy" class="icon icon-card" />
+      </div>
+      <div class="second-set animate__animated animate__pulse">
+        <img src="icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact section -->
+  <section class="contact" id="contact">
+    <h2>Contacto</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="https://formsubmit.co/gustavog786@gmail.com" method="POST">
+          <div class="form-control">
+            <label for="name">Nombre y Apellido</label>
+            <input type="text" id="name" name="name" placeholder="Ingrese su nombre y apellido"
+              class="input-field" required />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su Email" class="input-field"
+              required />
+          </div>
+          <div class="form-control">
+            <label for="message">Mensaje</label>
+            <textarea id="message" cols="60" rows="10" placeholder="Ingrese un mensaje" name="message"
+              class="input-field" required></textarea>
+          </div>
+          <input type="submit" value="Enviar" id="submit-btn" class="submit-btn" />
+
+          <input type="hidden" name="_next" value=" https://gustavog786.github.io/AP-Proyecto-Final-Ticmas-Academy/">
+          <input type="hidden" name="_captcha" value="false">
+          
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social accounts - Fixed to the right -->
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/gustavo-andres-godoy-developer/" target="_blank"><img src="icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy"
+        class="socicon" /></a>
+    <a href="https://github.com/gustavog786" target="_blank"><img src="icons/icons8-github.gif" alt="Github" class="socicon" /></a>
+  </div>
+
+  <!-- Scroll to top -->
+  <i class="scroll-up" id="scroll-up"><img src="icons/icons8-upward-arrow.gif" class="socicon up-arrow"
+      alt="" /></i>
+
+  <!-- Footer section -->
+  <footer>
+    <p class="copy">&copy; Copyright 2023</p>
+    <p class="copy">
+      by
+      <a href="https://github.com/gustavog786" target="_blank">Gustavo Andres Godoy</a>
+    </p>
+  </footer>
+
+  <!-- Website scripts -->
+  <script src="script.js"></script>
+
+  <!-- Ion icons scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
